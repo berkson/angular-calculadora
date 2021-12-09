@@ -8,10 +8,22 @@ import { CalculadoraService } from '../services';
 })
 export class CalculadoraComponent implements OnInit {
 
+  private numero1: string;
+  private numero2: string;
+  private resultado: number;
+  private operacao: string;
+
   constructor(private calculadoraService: CalculadoraService) { }
 
   // executado após a criação do objeto. consultas a banco de dados devem ser feitas aqui e não no canstrutor
   ngOnInit(): void {
+    this.limpar();
   }
 
+  private limpar(): void{
+    this.numero1 = '0';
+    this.numero2 = null;
+    this.resultado = null;
+    this.operacao = null;
+  }
 }

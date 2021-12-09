@@ -19,6 +19,14 @@ export class CalculadoraService {
 
   constructor() { }
 
+  /**
+   * Método que calcula uma operação matemática dado dois números.
+   * Suporta as 4 operações básicas
+   * @param num1 number
+   * @param num2 number
+   * @param operacao string Referente a operação matemática
+   * @returns number Resultado da operação
+   */
   calcular(num1: number, num2: number, operacao: string): number {
     let resultado: number;
 
