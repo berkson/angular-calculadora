@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CalculadoraComponent } from './components';
-import { CalculadoraService } from '.';
-
-
+import { CalculadoraService } from './services';
 
 
 
