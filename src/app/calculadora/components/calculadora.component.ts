@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalculadoraService } from '..';
 
 @Component({
   selector: 'app-calculadora',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculadoraComponent implements OnInit {
 
-  constructor() { }
+  constructor(private calculadoraService: CalculadoraService) { }
 
   // executado após a criação do objeto. consultas a banco de dados devem ser feitas aqui e não no canstrutor
   ngOnInit(): void {
